@@ -16,7 +16,7 @@ for dataset in winogrande_s ARC-Challenge ARC-Easy winogrande_m obqa boolq; do
                 --max-seq-len 300 \
                 --seed $seed \
                 --evaluate \
-                --wandb-name $name --wandb-project "BLoB-llama-all" \
+                --nowand
                 --apply-classhead-lora --lora-r 8 --lora-alpha 16 --lora-dropout 0 \
                 --log-path $name \
                 --max-train-steps 5000 \
